@@ -12183,5 +12183,8 @@ fieldset:disabled .btn {
 
 .jumbotron {
   background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
 }
 
