@@ -1,3 +1,14 @@
-body{
-    background-color: black;
+/* Bootstrap */
+@import '~bootstrap/scss/bootstrap';
+
+
+.powered-visa {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+
+.jumbotron{
+    background-image: url(../img/jumbotron.jpg);
 }
