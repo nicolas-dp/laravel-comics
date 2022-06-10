@@ -12175,12 +12175,22 @@ fieldset:disabled .btn {
   }
 }
 
+.active {
+  border-bottom: 2px solid #0282F9;
+  box-shadow: #303030;
+}
+
 /* HEADER */
 
 .powered-visa {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
+}
+
+.nav a {
+  font-weight: 500;
+  color: #303030;
 }
 
 /* MAIN */
@@ -12201,10 +12211,6 @@ fieldset:disabled .btn {
 
 .load a {
   padding: 0.2rem 1rem;
-}
-
-.bg-dark {
-  height: 753px;
 }
 
 /* FOOTER */

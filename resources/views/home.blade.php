@@ -2,5 +2,5 @@
 
 
 @section('content')
-@include ('partials.main')
+@include ('cards.index')
 @endsection

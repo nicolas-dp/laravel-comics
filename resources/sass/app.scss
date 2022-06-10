@@ -6,6 +6,10 @@ $dc-dark: #303030;
 $dc-white: white;
 $dc-primary: #0282F9;
 
+.active {
+    border-bottom: 2px solid $dc-primary;
+    box-shadow: #303030;
+}
 
 /* HEADER */
 
@@ -15,6 +19,14 @@ $dc-primary: #0282F9;
     gap: 2rem;
 }
 
+.nav {
+
+    a {
+        font-weight:500;
+        color: $dc-dark;
+    }
+
+}
 
 /* MAIN */
 .jumbotron {

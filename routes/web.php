@@ -68,3 +68,18 @@ Route::get('/shop', function () {
 
     return ('Shop Page');
 })->name('shop');
+
+
+Route::get('/cards/{id}', function ($id) {
+    $comics = config('db.comics');
+    //dd(count($products));
+    if ($id >= 0 && is_numeric($id) && $id < count($comics)) {
+        //dd($id);
+        //dd($products[$id]);
+        $card = $comics[$id];
+        return view('cards.show', compact('card'));
+    } else {
+        //dd('Abort! 404');
+        abort(404);
+    }
+})->name('cards.show');

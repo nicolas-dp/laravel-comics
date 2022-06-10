@@ -9,13 +9,25 @@
 <div class="grid bg-dark pb-5">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-3 row-cols-md-6 pt-5">
-            @foreach ($comics as $comic)
+            @forelse($comics as $index => $comic)
+
             <div class="col">
-                <img height="250" width="200" src="{{$comic['thumb']}}" alt="...">
-                <h6 class="text-white">{{$comic['series']}}</h6>
+                <a class="text-decoration-none" href="{{route('cards.show', $index)}}">
+                    <img height="250" width="200" src="{{$comic['thumb']}}" alt="...">
+                    <h6 class="text-white">{{$comic['series']}}</h6>
+                </a>
             </div>
-            @endforeach
+
+            @empty
+            <div class="col">
+                <p>No Cards to show!</p>
+            </div>
+
+            @endforelse
+            
         </div>
+
+
         <div class="load text-center">
             <a class="fw-bold text-white bg-primary text-decoration-none">LOAD MORE</a>
         </div>
