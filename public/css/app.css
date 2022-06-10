@@ -12175,11 +12175,15 @@ fieldset:disabled .btn {
   }
 }
 
+/* HEADER */
+
 .powered-visa {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
 }
+
+/* MAIN */
 
 .jumbotron {
   background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
@@ -12193,5 +12197,88 @@ fieldset:disabled .btn {
   height: 2rem;
   bottom: -1rem;
   left: 16rem;
+}
+
+.load a {
+  padding: 0.2rem 1rem;
+}
+
+.bg-dark {
+  height: 753px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer .col {
+  width: 13%;
+}
+
+.dc-bg {
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 47rem;
+}
+
+/* Footer end */
+
+.footer_end_menu {
+  background-color: #303030;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.footer_end_menu a {
+  border: none;
+}
+
+.button {
+  border: 1px solid #0282F9;
+  padding: 0.5rem;
+}
+
+.button:hover {
+  filter: drop-shadow(0 0 6px white);
+}
+
+.button a {
+  color: white;
+}
+
+.follow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.follow h5,
+.follow .h5 {
+  margin-right: 1rem;
+  color: #0282F9;
+}
+
+.follow a:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 

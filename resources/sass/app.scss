@@ -1,13 +1,13 @@
 /* Bootstrap */
 @import '~bootstrap/scss/bootstrap';
 
+$dc-main-bg: #1C1C1C;
+$dc-dark: #303030;
+$dc-white: white;
 $dc-primary: #0282F9;
-$dc-banner-bg: #1C1C1C;
-$dc-footer-bg: #303030;
-$dc-text-dark: #464646;
-$dc-text-white: #FFFFF2;
-$dc-text-grey: #797777;
 
+
+/* HEADER */
 
 .powered-visa {
     display: flex;
@@ -16,6 +16,7 @@ $dc-text-grey: #797777;
 }
 
 
+/* MAIN */
 .jumbotron {
     background-image: url(../img/jumbotron.jpg);
     background-repeat: no-repeat;
@@ -28,4 +29,88 @@ $dc-text-grey: #797777;
     height: 2rem;
     bottom: -1rem;
     left: 16rem;
+}
+
+
+.load {
+    a {
+        padding: 0.2rem 1rem;
+    }
+
+}
+
+/* FOOTER */
+
+.footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ul {
+        list-style: none;
+    }
+
+    .col {
+        width: 13%;
+
+    }
+}
+
+
+.dc-bg {
+    background-image: url(../img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 47rem;
+}
+
+
+/* Footer end */
+.footer_end_menu {
+    background-color: $dc-dark;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 15vh;
+
+    a {
+        border: none;
+    }
+}
+
+.button {
+    border: 1px solid $dc-primary;
+    padding: 0.5rem;
+
+    &:hover {
+        filter: drop-shadow(0 0 6px white);
+    }
+
+    a {
+        color: $dc-white;
+    }
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h5 {
+        margin-right: 1rem;
+        color: $dc-primary;
+    }
+
+    a:hover {
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
