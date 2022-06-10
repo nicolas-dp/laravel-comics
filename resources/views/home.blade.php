@@ -1,9 +1,6 @@
-@include ('layouts.tag_head')
+@extends('layouts.app')
 
-@include ('layouts.tag_main')
 
-@include ('partials.header')
-
+@section('content')
 @include ('partials.main')
-
-@include ('layouts.tag_footer')
+@endsection
