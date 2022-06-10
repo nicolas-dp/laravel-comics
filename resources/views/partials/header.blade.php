@@ -8,10 +8,10 @@
     </div>
     <nav>
         <div class="container">
-            <img src="/../resources/img/dc-logo-png" alt="...">
+            <img src="{{asset('img/dc-logo.png')}}" alt="...">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link active" aria-current="page" href="#">CARACHTERS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
